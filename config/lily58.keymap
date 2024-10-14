@@ -14,10 +14,15 @@
         compatible = "zmk,combos";
 
         fourth_layer_accord {
-            bindings = <&to 4>;
+            bindings = <&to_rus>;
             key-positions = <51 52>;
             layers = <0>;
-            timeout-ms = <200>;
+        };
+
+        from_rus_to_def {
+            bindings = <&from_rus>;
+            key-positions = <51 52>;
+            layers = <4>;
         };
     };
 
@@ -28,6 +33,20 @@
             bindings = <&macro_tap>, <&kp COMMA &kp SPACE>;
 
             label = "COMMA_SPACE";
+        };
+
+        to_rus: to_rus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &to 4>;
+            label = "TO_RUS";
+        };
+
+        from_rus: from_rus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &to 0>;
+            label = "FROM_RUS";
         };
     };
 
@@ -43,7 +62,7 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N9                                         &kp N0  &kp N2     &kp N4     &kp N6   &kp N8    &to 4
+&kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N9                                         &kp N0  &kp N2     &kp N4     &kp N6   &kp N8    &kp LG(SPACE)
 &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                                          &kp Y   &kp U      &kp I      &kp O    &kp P     &kp MINUS
 &to 3    &kp A   &kp S   &kp D   &kp F   &kp G                                          &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &to 4    &kp Z   &kp X   &kp C   &kp V   &kp B   &kp LA(LSHIFT)          &kp BACKSPACE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
