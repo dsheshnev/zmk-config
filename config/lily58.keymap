@@ -131,7 +131,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans   &trans    &kp LG(SPACE)
 &trans  &kp Q   &kp W   &kp E   &kp T   &kp A                     &kp O   &kp U   &kp N      &kp Y    &kp P     &trans
 &trans  &kp R   &kp V   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp S   &trans    &trans  &kp I   &kp M   &kp COMMA  &kp DOT  &kp LBKT  &kp BSLH
+&trans  &kp Z   &kp X   &kp C   &kp B   &kp S   &trans    &trans  &kp I   &kp M   &kp COMMA  &kp DOT  &kp LBKT  &kp BSLH
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
