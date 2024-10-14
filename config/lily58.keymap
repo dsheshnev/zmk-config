@@ -43,7 +43,7 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N9                                         &kp N0  &kp N2     &kp N4     &kp N6   &kp N8    &kp GRAVE
+&kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N9                                         &kp N0  &kp N2     &kp N4     &kp N6   &kp N8    &to 4
 &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                                          &kp Y   &kp U      &kp I      &kp O    &kp P     &kp MINUS
 &to 3    &kp A   &kp S   &kp D   &kp F   &kp G                                          &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &to 4    &kp Z   &kp X   &kp C   &kp V   &kp B   &kp LA(LSHIFT)          &kp BACKSPACE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
@@ -103,10 +103,10 @@
 
         layer_4 {
             bindings = <
-&to 0   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans   &trans    &kp LG(SPACE)
+&trans  &kp Q   &kp W   &kp E   &kp T   &kp A                     &kp O   &kp U   &kp N      &kp Y    &kp P     &trans
+&trans  &kp R   &kp V   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp S   &trans    &trans  &kp I   &kp M   &kp COMMA  &kp DOT  &kp LBKT  &kp BSLH
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
