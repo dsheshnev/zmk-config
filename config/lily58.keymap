@@ -33,11 +33,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                         &kp N6  &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB  &kp Q   &kp W   &kp E     &kp R   &kp T                                          &kp Y   &kp U      &kp I      &kp O    &kp P     &kp MINUS
-&to 3    &kp A   &kp S   &kp D     &kp F   &kp G                                          &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&to 4    &kp Z   &kp X   &kp C     &kp V   &kp B   &kp LA(LSHIFT)          &kp BACKSPACE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                         &kp LALT  &to 3   &mo 1   &mt LEFT_SHIFT SPACE    &kp SPACE      &mo 2   &kp ENTER  &kp RGUI
+&kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N9                                         &kp N0  &kp N2     &kp N4     &kp N6   &kp N8    &kp GRAVE
+&kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                                          &kp Y   &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&to 3    &kp A   &kp S   &kp D   &kp F   &kp G                                          &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&to 4    &kp Z   &kp X   &kp C   &kp V   &kp B   &kp LA(LSHIFT)          &kp BACKSPACE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                         &none   &to 3   &mo 1   &mt LEFT_SHIFT SPACE    &kp SPACE      &mo 2   &kp ENTER  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -55,7 +55,7 @@
 &trans     &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP                    &trans  &trans                &trans                 &trans             &trans  &trans
 &kp F1     &kp F2        &kp F3        &kp F4      &kp F5        &kp F6                          &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE   &none   &none
 &kp GRAVE  &kp EXCL      &kp AT        &kp HASH    &kp DOLLAR    &kp PRCNT                       &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &none   &none
-&trans     &trans        &trans        &kp LC(V)   &kp LC(C)     &kp LC(Z)     &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none              &none   &none
+&trans     &trans        &trans        &kp LC(V)   &kp LC(C)     &kp LC(Z)     &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE          &none   &none
                                        &trans      &trans        &trans        &trans    &trans  &trans  &trans                &trans
             >;
 
