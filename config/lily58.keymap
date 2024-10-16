@@ -26,13 +26,18 @@
 
         hard_sign {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <30 44>;
+            key-positions = <39 40>;
             layers = <1>;
         };
 
         l3_underscore {
             bindings = <&kp LS(MINUS)>;
             key-positions = <55 56>;
+        };
+
+        i_o {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <27 28>;
         };
     };
 
