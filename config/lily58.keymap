@@ -84,9 +84,9 @@
 
             bindings = <
 &kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N9                                         &kp N0  &kp N2     &kp N4     &kp N6   &kp N8    &kp LG(SPACE)
-&kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                                          &kp Y   &kp U      &kp I      &kp O    &kp P     &kp MINUS
-&none    &kp A   &kp S   &kp D   &kp F   &kp G                                          &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&none    &kp Z   &kp X   &kp C   &kp V   &kp B   &none                   &kp BACKSPACE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+&kp TAB  &kp Q   &kp G   &kp M   &kp L   &kp W                                          &kp Y   &kp F      &kp U      &kp B    &kp SEMI  &kp BSLH
+&none    &kp D   &kp S   &kp T   &kp N   &kp R                                          &kp I   &kp A      &kp E      &kp O    &kp H     &kp SQT
+&none    &kp Z   &kp X   &kp C   &kp V   &kp J   &none                   &kp BACKSPACE  &kp K   &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
                          &none   &mo 4   &mo 2   &mt LEFT_SHIFT SPACE    &kp SPACE      &mo 3   &kp ENTER  &kp RGUI
             >;
 
@@ -95,11 +95,11 @@
 
         russian {
             bindings = <
-&trans  &trans   &trans   &trans  &trans  &trans                          &trans  &trans         &trans  &trans    &trans     &kp LG(SPACE)
-&trans  &kp W    &kp X    &kp F   &kp R   &kp S                           &kp V   &kp D          &kp K   &kp P     &kp I      &kp Q
-&trans  &kp G    &kp B    &kp J   &kp T   &kp E                           &kp H   &kp Y          &kp N   &kp C     &kp COMMA  &kp LBKT
-&trans  &kp SQT  &kp DOT  &kp M   &kp Z   &kp LS(AMPS)  &trans    &trans  &kp U   &kp LS(CARET)  &kp L   &kp SEMI  &kp O      &kp A
-                          &trans  &trans  &ru_glyphs    &trans    &trans  &mo 3   &trans         &trans
+&trans  &trans   &trans   &trans  &trans  &trans                              &trans  &trans            &trans  &trans    &trans     &kp LG(SPACE)
+&trans  &kp W    &kp X    &kp F   &kp R   &kp S                               &kp V   &kp D             &kp K   &kp P     &kp I      &kp Q
+&trans  &kp G    &kp B    &kp J   &kp T   &kp E                               &kp H   &kp Y             &kp N   &kp C     &kp COMMA  &kp LBKT
+&trans  &kp SQT  &kp DOT  &kp M   &kp Z   &kp LS(NUMBER_7)  &trans    &trans  &kp U   &kp LS(NUMBER_6)  &kp L   &kp SEMI  &kp O      &kp A
+                          &trans  &trans  &ru_glyphs        &trans    &trans  &mo 3   &trans            &trans
             >;
         };
 
