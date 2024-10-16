@@ -95,11 +95,11 @@
 
         russian {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans     &trans   &trans    &kp LG(SPACE)
-&trans  &kp Q   &kp W   &kp E   &kp T   &kp A                         &kp O   &kp U   &kp N      &kp Y    &kp P     &kp LBKT
-&trans  &kp R   &kp V   &kp D   &kp F   &kp G                         &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&trans  &kp Z   &kp X   &kp C   &kp B   &kp S       &trans    &trans  &kp I   &kp M   &kp COMMA  &kp DOT  &kp LBKT  &kp BSLH
-                        &trans  &trans  &ru_glyphs  &trans    &trans  &mo 3   &trans  &trans
+&trans  &trans   &trans   &trans  &trans  &trans                          &trans  &trans         &trans  &trans    &trans     &kp LG(SPACE)
+&trans  &kp W    &kp X    &kp F   &kp R   &kp S                           &kp V   &kp D          &kp K   &kp P     &kp I      &kp Q
+&trans  &kp G    &kp B    &kp J   &kp T   &kp E                           &kp H   &kp Y          &kp N   &kp C     &kp COMMA  &kp LBKT
+&trans  &kp SQT  &kp DOT  &kp M   &kp Z   &kp LS(AMPS)  &trans    &trans  &kp U   &kp LS(CARET)  &kp L   &kp SEMI  &kp O      &kp A
+                          &trans  &trans  &ru_glyphs    &trans    &trans  &mo 3   &trans         &trans
             >;
         };
 
