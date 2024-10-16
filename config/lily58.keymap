@@ -84,9 +84,9 @@
 
             bindings = <
 &kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N9                                         &kp N0  &kp N2     &kp N4     &kp N6   &kp N8    &kp LG(SPACE)
-&kp TAB  &kp Q   &kp G   &kp M   &kp L   &kp W                                          &kp Y   &kp F      &kp U      &kp B    &kp SEMI  &kp BSLH
+&kp TAB  &kp Q   &kp G   &kp M   &kp L   &kp W                                          &kp B   &kp Y      &kp U      &kp V    &kp SEMI  &kp BSLH
 &none    &kp D   &kp S   &kp T   &kp N   &kp R                                          &kp I   &kp A      &kp E      &kp O    &kp H     &kp SQT
-&none    &kp Z   &kp X   &kp C   &kp V   &kp J   &none                   &kp BACKSPACE  &kp K   &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
+&none    &kp Z   &kp X   &kp C   &kp F   &kp J   &none                   &kp BACKSPACE  &kp K   &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
                          &none   &mo 4   &mo 2   &mt LEFT_SHIFT SPACE    &kp SPACE      &mo 3   &kp ENTER  &kp RGUI
             >;
 
