@@ -74,6 +74,27 @@
 
             label = "RU_GLYPHS";
         };
+
+        ru_dot: ru_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp PERIOD &kp LG(SPACE)>;
+            label = "RU_DOT";
+        };
+
+        ru_comma: ru_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&lang_shift &kp COMMA &lang_shift>;
+            label = "RU_COMMA";
+        };
+
+        lang_shift: lang_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "LANG_SHIFT";
+        };
     };
 
     keymap {
@@ -100,11 +121,11 @@
 
         russian {
             bindings = <
-&trans  &trans   &trans   &trans  &trans  &trans                              &trans  &trans            &trans  &trans    &trans     &kp LG(SPACE)
-&trans  &kp W    &kp X    &kp F   &kp R   &kp S                               &kp V   &kp D             &kp K   &kp P     &kp I      &kp Q
-&trans  &kp G    &kp B    &kp J   &kp T   &kp E                               &kp H   &kp Y             &kp N   &kp C     &kp COMMA  &kp LBKT
-&trans  &kp SQT  &kp DOT  &kp M   &kp Z   &kp LS(NUMBER_7)  &trans    &trans  &kp U   &kp LS(NUMBER_6)  &kp L   &kp SEMI  &kp O      &kp A
-                          &trans  &trans  &ru_glyphs        &trans    &trans  &mo 3   &trans            &trans
+&trans  &trans   &trans   &trans  &trans  &trans                        &trans  &trans     &trans  &trans    &trans     &kp LG(SPACE)
+&trans  &kp W    &kp X    &kp F   &kp R   &kp S                         &kp V   &kp D      &kp K   &kp P     &kp I      &kp Q
+&trans  &kp G    &kp B    &kp J   &kp T   &kp E                         &kp H   &kp Y      &kp N   &kp C     &kp COMMA  &kp LBKT
+&trans  &kp SQT  &kp DOT  &kp M   &kp Z   &ru_dot     &trans    &trans  &kp U   &ru_comma  &kp L   &kp SEMI  &kp O      &kp A
+                          &trans  &trans  &ru_glyphs  &trans    &trans  &mo 3   &trans     &trans
             >;
         };
 
