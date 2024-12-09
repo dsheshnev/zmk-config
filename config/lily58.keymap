@@ -113,7 +113,7 @@
 &kp TAB  &kp Q   &kp G   &kp M   &kp L   &kp W                                  &kp B   &kp Y      &kp U      &kp V    &kp SEMI  &kp BSLH
 &none    &kp D   &kp S   &kp T   &kp N   &kp R                                  &kp I   &kp A      &kp E      &kp O    &kp H     &kp SQT
 &none    &kp Z   &kp X   &kp C   &kp F   &kp J   &none    &kp BACKSPACE         &kp K   &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
-                         &none   &mo 4   &mo 2   &none    &mt LEFT_SHIFT SPACE  &mo 3   &kp ENTER  &kp RGUI
+                         &to 5   &mo 4   &mo 2   &none    &mt LEFT_SHIFT SPACE  &mo 3   &kp ENTER  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -174,6 +174,16 @@
 &kp LS(DQT)  &trans        &trans         &trans         &trans        &trans                          &trans        &trans      &trans        &trans         &trans        &trans
 &kp SQT      &trans        &trans         &trans         &trans        &trans        &trans    &trans  &trans        &trans      &trans        &trans         &trans        &trans
                                           &trans         &trans        &trans        &trans    &trans  &trans        &kp BSLH    &trans
+            >;
+        };
+
+        Games {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans           &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp KP_N1        &kp KP_N2  &kp KP_N3  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans           &trans
             >;
         };
     };
