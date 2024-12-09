@@ -15,19 +15,19 @@
         fourth_layer_accord {
             bindings = <&to_rus>;
             key-positions = <51 52>;
-            layers = <0>;
+            layers = <1>;
         };
 
         from_rus_to_def {
             bindings = <&from_rus>;
             key-positions = <51 52>;
-            layers = <1>;
+            layers = <2>;
         };
 
         hard_sign {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <39 40>;
-            layers = <1>;
+            layers = <2>;
         };
 
         l3_underscore {
@@ -53,14 +53,14 @@
         to_rus: to_rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &to 1>;
+            bindings = <&kp LG(SPACE) &to 2>;
             label = "TO_RUS";
         };
 
         from_rus: from_rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &to 0>;
+            bindings = <&kp LG(SPACE) &to 1>;
             label = "FROM_RUS";
         };
 
@@ -68,9 +68,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LG(SPACE) &to 2>,
+                <&kp LG(SPACE) &to 3>,
                 <&macro_pause_for_release>,
-                <&kp LG(SPACE) &to 1>;
+                <&kp LG(SPACE) &to 2>;
 
             label = "RU_GLYPHS";
         };
@@ -100,6 +100,16 @@
     keymap {
         compatible = "zmk,keymap";
 
+        Games {
+            bindings = <
+&kp ESC  &kp N1  &kp N2  &kp N3   &kp N4     &kp N5                          &kp N6  &kp N7           &kp N8     &kp N9     &kp N0  &trans
+&kp T    &kp I   &kp Q   &kp W    &kp E      &kp R                           &trans  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &trans  &trans
+&kp G    &kp M   &kp A   &kp S    &kp D      &kp F                           &trans  &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans  &trans
+&kp B    &kp J   &kp Z   &kp X    &kp C      &kp V      &to 1        &trans  &trans  &kp KP_N1        &kp KP_N2  &kp KP_N3  &trans  &trans
+                         &kp TAB  &kp LCTRL  &kp LSHFT  &kp SPACE    &trans  &trans  &trans           &trans
+            >;
+        };
+
         default_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
@@ -113,7 +123,7 @@
 &kp TAB  &kp Q   &kp G   &kp M   &kp L   &kp W                                  &kp B   &kp Y      &kp U      &kp V    &kp SEMI  &kp BSLH
 &none    &kp D   &kp S   &kp T   &kp N   &kp R                                  &kp I   &kp A      &kp E      &kp O    &kp H     &kp SQT
 &none    &kp Z   &kp X   &kp C   &kp F   &kp J   &none    &kp BACKSPACE         &kp K   &kp P      &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
-                         &to 5   &mo 4   &mo 2   &none    &mt LEFT_SHIFT SPACE  &mo 3   &kp ENTER  &kp RGUI
+                         &to 0   &mo 5   &mo 3   &none    &mt LEFT_SHIFT SPACE  &mo 4   &kp ENTER  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -125,7 +135,7 @@
 &trans  &kp W    &kp X    &kp F   &kp R   &kp S                         &kp V   &kp D      &kp K   &kp P     &kp I      &kp Q
 &trans  &kp G    &kp B    &kp J   &kp T   &kp E                         &kp H   &kp Y      &kp N   &kp C     &kp COMMA  &kp LBKT
 &trans  &kp SQT  &kp DOT  &kp M   &kp Z   &ru_dot     &trans    &trans  &kp U   &ru_comma  &kp L   &kp SEMI  &kp O      &kp A
-                          &trans  &trans  &ru_glyphs  &trans    &trans  &mo 3   &trans     &trans
+                          &trans  &trans  &ru_glyphs  &trans    &trans  &mo 4   &trans     &trans
             >;
         };
 
@@ -174,16 +184,6 @@
 &kp LS(DQT)  &trans        &trans         &trans         &trans        &trans                          &trans        &trans      &trans        &trans         &trans        &trans
 &kp SQT      &trans        &trans         &trans         &trans        &trans        &trans    &trans  &trans        &trans      &trans        &trans         &trans        &trans
                                           &trans         &trans        &trans        &trans    &trans  &trans        &kp BSLH    &trans
-            >;
-        };
-
-        Games {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans           &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp KP_N1        &kp KP_N2  &kp KP_N3  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans           &trans
             >;
         };
     };
